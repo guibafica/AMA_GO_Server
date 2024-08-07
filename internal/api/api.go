@@ -1,21 +1,11 @@
 package api
 
 import (
-	"context"
-	"encoding/json"
-	"errors"
-	"log/slog"
 	"net/http"
-	"sync"
 
 	"github.com/guibafica/AMA_GO_Server/internal/store/pgstore"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/go-chi/chi/v5/middleware"
-	"github.com/go-chi/cors"
-	"github.com/google/uuid"
-	"github.com/gorilla/websocket"
-	"github.com/jackc/pgx/v5"
 )
 
 type apiHandler struct {
